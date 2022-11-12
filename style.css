@@ -794,7 +794,7 @@ margin-right: 80vw;
 }
 .about-mobile{
   display: none;
-  height: 76.5vh;
+  height: calc(82.4vh - 54px);
   position: absolute;
   top: calc(8.8vh + 27px);
   width: 0;
