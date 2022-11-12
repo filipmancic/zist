@@ -1072,7 +1072,11 @@ margin-right: 80vw;
     .nav-item{
       padding: 13px;
     }
-    
+    .allprojbtn2 {
+      padding: 5px 10px !important;
+      z-index: 2;
+      border: 1px solid #ffc400;
+     }
   }
 
   

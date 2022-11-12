@@ -83,72 +83,140 @@ function closeMenu(){
 }
 
 function touch2(loc) {
-    document.querySelector(".about-mobile").removeAttribute("style");
-    document.querySelector(".track").style.zIndex = "1"
-    document.querySelector(".track2").style.zIndex = "1"
+        document.querySelector(".about-mobile").removeAttribute("style");
+        document.querySelector(".track").style.zIndex = "1"
+        document.querySelector(".track2").style.zIndex = "1"
+        
+        currentPage = 1;
+        document.querySelector('.about-mobile').style.display = "flex";
     
-    currentPage = 1;
-    document.querySelector('.about-mobile').style.display = "flex";
-
-    $(".about-mobile").animate({
-        width: "100vw"
-    }, 600);
-    $(".about-mobile").delay(100).animate({
-        top: 0,
-        height: "100vh"
-    }, 200, function () {
-        $(".st32").css({ "stroke": "#FFFFFF" });
-
-        document.querySelector(".about-mobile").style.height = "unset";
-        $(".imglogo").attr("src", "img/logow.png");
-
-        $(".webdev").delay(300).animate({
-            opacity: 1,
-        }, 300);
-        setTimeout(() => {
-            document.querySelector(".webdev").style.transform = "translateX(0)";
-        }, 300);
-        $(".webdesign").delay(600).animate({
-            opacity: 1,
-        }, 300);
-        setTimeout(() => {
-            document.querySelector(".webdesign").style.transform = "translateX(0)";
+        $(".about-mobile").animate({
+            width: "100vw"
         }, 600);
-        $(".android").delay(900).animate({
-            opacity: 1,
-        }, 300);
-        setTimeout(() => {
-            document.querySelector(".android").style.transform = "translateX(0)";
-        }, 300);
-        $(".webpen").delay(1200).animate({
-            opacity: 1,
-        }, 300);
-        setTimeout(() => {
-            document.querySelector(".webpen").style.transform = "translateX(0)";
-        }, 300);
-        $(".projects-mob").delay(1500).animate({
-            opacity: 1,
-        }, 300);
-        setTimeout(() => {
-            document.querySelector(".projects-mob").style.transform = "translateX(0)";
-        }, 300);
-
-        $(".whiteline").animate({
-            color: "#FFFFFF",
-        }, 500);
-        $(".nav-a").animate({
-            color: "rgb(255,255,255)"
-
+        $(".about-mobile").delay(100).animate({
+            top: 0,
+            height: "100vh"
+        }, 200, function () {
+            $(".st32").css({ "stroke": "#FFFFFF" });
+    
+            document.querySelector(".about-mobile").style.height = "unset";
+            $(".imglogo").attr("src", "img/logow.png");
+    
+            $(".webdev").delay(300).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".webdev").style.transform = "translateX(0)";
+            }, 300);
+            $(".webdesign").delay(600).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".webdesign").style.transform = "translateX(0)";
+            }, 600);
+            $(".android").delay(900).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".android").style.transform = "translateX(0)";
+            }, 300);
+            $(".webpen").delay(1200).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".webpen").style.transform = "translateX(0)";
+            }, 300);
+            $(".projects-mob").delay(1500).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".projects-mob").style.transform = "translateX(0)";
+            }, 300);
+    
+            $(".whiteline").animate({
+                color: "#FFFFFF",
+            }, 500);
+            $(".nav-a").animate({
+                color: "rgb(255,255,255)"
+    
+            }, 600);
+            $('.nav-a').toggleClass('wnav');
+    
+            document.querySelector(".track").style.marginTop = "-28px";
+            document.querySelector(".track2").style.bottom = "-28px";
+            
+            
+            $('html,body').animate({
+                scrollTop: $(loc).offset().top},
+                'slow');
+        });
+    
+};
+function touch3() {
+        document.querySelector(".about-mobile").removeAttribute("style");
+        document.querySelector(".track").style.zIndex = "1"
+        document.querySelector(".track2").style.zIndex = "1"
+        
+        currentPage = 1;
+        document.querySelector('.about-mobile').style.display = "flex";
+    
+        $(".about-mobile").animate({
+            width: "100vw"
         }, 600);
-        $('.nav-a').toggleClass('wnav');
+        $(".about-mobile").delay(100).animate({
+            top: 0,
+            height: "100vh"
+        }, 200, function () {
+            $(".st32").css({ "stroke": "#FFFFFF" });
+    
+            document.querySelector(".about-mobile").style.height = "unset";
+            $(".imglogo").attr("src", "img/logow.png");
+    
+            $(".webdev").delay(300).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".webdev").style.transform = "translateX(0)";
+            }, 300);
+            $(".webdesign").delay(600).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".webdesign").style.transform = "translateX(0)";
+            }, 600);
+            $(".android").delay(900).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".android").style.transform = "translateX(0)";
+            }, 300);
+            $(".webpen").delay(1200).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".webpen").style.transform = "translateX(0)";
+            }, 300);
+            $(".projects-mob").delay(1500).animate({
+                opacity: 1,
+            }, 300);
+            setTimeout(() => {
+                document.querySelector(".projects-mob").style.transform = "translateX(0)";
+            }, 300);
+    
+            $(".whiteline").animate({
+                color: "#FFFFFF",
+            }, 500);
+            $(".nav-a").animate({
+                color: "rgb(255,255,255)"
+    
+            }, 600);
+            $('.nav-a').toggleClass('wnav');
+    
+            document.querySelector(".track").style.marginTop = "-28px";
+            document.querySelector(".track2").style.bottom = "-28px";
+            
+        });
 
-        document.querySelector(".track").style.marginTop = "-28px";
-        document.querySelector(".track2").style.bottom = "-28px";
-
-        $('html,body').animate({
-            scrollTop: $(loc).offset().top},
-            'slow');
-    });
 };
 
 
@@ -197,7 +265,7 @@ if (window.outerWidth < 768) {
                    /*  */
                     currentPage=0;
                     document.querySelector(".about-mobile").removeAttribute("style");
-                    document.getElementById("mid-track").addEventListener("touchstart", touch2('.about-mobile'), { once: true });
+                    //document.getElementById("mid-track").addEventListener("touchstart", touch2('.about-mobile'), { once: true });
                 })
             })
         }
@@ -309,7 +377,8 @@ if (window.outerWidth < 768) {
                     document.getElementById('donjacrt').style.animation = '0.8s desno 0.6s ease-out';
                     document.getElementById('donjacrt').style.animationFillMode = "forwards";
 
-
+                    $(".about-mobile").clearQueue();
+                    $(".about-mobile").stop();
 
 
                     $("#swiperight").delay(700).animate({
@@ -326,25 +395,21 @@ if (window.outerWidth < 768) {
                             width: "50%",
                             marginLeft: "40vw"
                         }, 400);
-
                     });
                     document.querySelector('.loader').remove();
-                    scrollcount++;
-                    //PREBACIVANJE NA ABOUT
+                    scrollcount++;    
 
-                    document.getElementById("mid-track").addEventListener("touchstart", touch2(".about-mobile"), { once: true });
                 });
             })
-
-
+            
             document.getElementById("stc").remove();
-
-
-
-        } else {
         }
-
     };
+
+    //PREBACIVANJE NA ABOUT
+    document.getElementById("mid-track").addEventListener("touchstart", touch3);
+    
+
     /*MENI*/
     $(function () {
         $('#menu').click(function () {
