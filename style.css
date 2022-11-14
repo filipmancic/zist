@@ -776,6 +776,9 @@ margin-right: 80vw;
 .scroller i:nth-child(3){
   animation-delay: 0.8s;
 }
+#m-item{
+ display:none;  
+}
 .anim {
   cursor: pointer;
   position: absolute;
