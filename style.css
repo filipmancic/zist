@@ -135,9 +135,13 @@ canvas{
   width: 100vw;
   justify-content: center;
 }
+.overflowauto{
+ overflow:auto;   
+}
 .nav-item{
     opacity: 0;
     transition: padding 0.3s;
+    margin: -5px 25px 0;
     padding: 50px 35px 0px;
     width: 10vw;
     display: flex;
