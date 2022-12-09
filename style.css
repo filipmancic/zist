@@ -180,11 +180,18 @@ canvas{
     overflow: hidden;
     display: flex;
     width: 100%;
-    margin-top: 18.6vh;
+   /* margin-top: 18.6vh;*/
     background-color: #ffdd03;
-
+z-index: 8;
     opacity: 0;
 }
+#iznad{
+  height: 18.6vh;
+  background-color: #ededed;
+  z-index: 2;
+  position: relative;
+}
+
 .dform{
     font-size: 42px;
     letter-spacing: 3px;
@@ -268,8 +275,10 @@ h6{
 }
 #mid-track{
     position: relative;
-    height: calc(100vh - 420px);
+    /*height: calc(100vh - 420px);*/
+    height: 55vh;
     overflow: hidden;
+    z-index: 0;
     align-content: center;
     display: flex;
     
@@ -288,6 +297,25 @@ h6{
 .acc{
   align-content: center;
 }
+.track3{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  background-color: #ffdd03;
+  transform: rotate(180deg);
+  z-index: 6;
+  opacity: 0;
+}
+
+#ispod{
+    height: 50vh;
+    background-color: #ededed;
+    z-index: 4;
+display:none;
+    width: 100%;
+    position: relative;
+}
 .track2{
     /*position: fixed;*/
     bottom: 140px;
@@ -299,6 +327,13 @@ h6{
 
     opacity: 0;
 }
+/*
+#ispod{
+  height: 18.6vh;
+  background-color: #ededed;
+  z-index: 2;
+  position: absolute;
+}*/
 .fix-height{
     height: calc(100vh - 420px);
 }
@@ -365,6 +400,25 @@ z-index: 2;
   overflow: hidden;
   width: 100%
 }
+#horheight{
+/*padding-top: 30vh;*/
+  
+}
+#hor{
+padding-left: 10vw;
+
+}
+#stickydiv{
+  position: sticky;
+  /*top:30vh;*/
+  top: 0vh;
+  width: 125%;
+  overflow: hidden;
+  margin-left: -10vw;
+  margin-right: 15vw;
+  /*padding-left: 10vw;
+  padding-right: 10vw;*/
+}
 .horizontal{
   flex-direction: row;
   flex-wrap: nowrap;
@@ -373,6 +427,7 @@ z-index: 2;
   align-items: center;
   transition: transform 0.5s ease-out;
   transform: translateX(0px) translateY(0px);
+  position: relative;
 }
 .hori-img{
   width: 450px;
@@ -422,6 +477,10 @@ z-index: 2;
   flex-direction: column;
   align-items: center;
 }
+.lastproject{
+margin-right: 40vw;
+
+}
 .project-name{
   text-transform: uppercase;
   font-size: 42px;
@@ -451,10 +510,12 @@ z-index: 2;
 margin-right: 80vw;
 }
 .about{
+  position: absolute;
+  top:0;
   padding: 0 5vw;
   opacity: 0;
   color: white;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 90vw;
   margin: 25vh 5vw;
@@ -505,7 +566,9 @@ margin-right: 80vw;
 #contact{
   color: #d5d5d5;
   width: 120vw;
-  padding-left: 15vw;
+  height: 100vh;
+  padding-left: 21vw;
+  padding-right: 21vw;
   /* backdrop-filter: blur(4px); */
   background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0));
   background-color: rgba(0,0,0,0.4);
@@ -841,7 +904,20 @@ margin-right: 80vw;
     .project:nth-child(even) {
       margin-top: 30px;
     }
-    html, body {margin: 0; height: 100%; max-width:100vw; overflow-x: hidden}
+    html, body {margin: 0;
+    height: 100%; 
+    max-width:100vw; 
+    overflow-x: hidden; 
+    background-color: #171717;;
+    }
+    .loader{
+    position: absolute;
+    height: 80vh;
+    }
+    .loader1{
+    position: absolute;
+    height: 80vh;
+    }
     .w{
       font-size: 60vw;
       margin-top: -24vw;
@@ -850,6 +926,10 @@ margin-right: 80vw;
       margin: auto 50px;
       width: unset;
       height: 170px;
+    }
+    .track, .track2{
+z-index: 2;
+
     }
     .about-p {
       font-size: 15px;
@@ -988,7 +1068,7 @@ margin-right: 80vw;
       position: absolute;
     }
     #mid-track{
-      height: 71vh;
+      height: 64vh;
     }
     .project {
       backdrop-filter: blur(3px);
@@ -1280,7 +1360,7 @@ width: 28px;
 
 .st3 {
   fill:transparent;
-  stroke:#000000;
+  stroke:#171717;
   stroke-width:34.4561;
   stroke-miterlimit:10;
   stroke-dasharray: 1000;
@@ -1291,7 +1371,7 @@ width: 28px;
 
 .st32 {
   fill:transparent;
-  stroke:#000000;
+  stroke:#171717;
   stroke-width:34.4561;
   /*stroke-miterlimit:10;
   stroke-dasharray: 1000;
